@@ -131,10 +131,24 @@ a {
     box-sizing: border-box;
 }
 
-.board_page a.bit {
+.board_page a.bt.first {
     padding-top: 10px;
     font-size: 1.2rem;
-    letter-spacing: -1px;
+}
+
+.board_page a.bt.prev {
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+.board_page a.bt.next {
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+.board_page a.bt.last {
+    padding-top: 10px;
+    font-size: 1.2rem;
 }
 
 .board_page a.num {
