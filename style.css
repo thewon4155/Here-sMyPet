@@ -120,7 +120,7 @@ a {
     font-size: 0;
 }
 
-.board_page a{
+.board_page a {
     display: inline-block;
     width: 32px;
     height: 32px;
@@ -164,4 +164,129 @@ a {
 
 .board_page a:first-child {
     border-left: 1px solid #ddd;
+}
+
+.board_view {
+    width: 100%;
+    border-top: 2px solid #000;
+}
+
+.board_view .title {
+    padding: 20px 15px;
+    border-bottom: 1px dashed #ddd;
+    font-size: 2rem;
+}
+
+.board_view .info {
+    padding: 15px;
+    border-bottom: 1px solid #999;
+    font-size: 0;
+}
+
+.board_view .info dl {
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+
+.board_view .info dl:first-child {
+    padding-left: 0;
+}
+
+.board_view .info dl::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 1px;
+    height: 13px;
+    background: #000;
+    display: block;
+}
+
+.board_view .info dl:first-child::before {
+    display: none;
+}
+
+.board_view .info dl dt {
+    display: inline-block;
+    font-size: 1.4rem;
+}
+
+.board_view .info dl dd {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-left: 10px;
+    color: #777;
+}
+
+.board_view .cont {
+    padding: 15px;
+    border-bottom: 1px solid #000;
+    line-height: 200%;
+    font-size: 1.4rem;
+}
+
+.board_write {
+    border-top: 2px solid #000;
+}
+
+.board_write .title,
+.board_write .info {
+    padding: 15px;
+}
+
+.board_write .info {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-size: 0;
+}
+
+.board_write .cont {
+    border-bottom: 1px solid #000;
+}
+
+.board_write .cont textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    height: 300px;
+    box-sizing: border-box;
+    border: 0;
+    resize: vertical;
+}
+
+.board_write .title dt,
+.board_write .title dd,
+.board_write .info dt,
+.board_write .info dd {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.4rem;
+}
+
+.board_write .title dt {
+    width: 100px;
+}
+
+.board_write .info dt {
+    width: 100px;
+}
+
+.board_write .info dl {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.board_write .title input[type="text"],
+.board_write .info input[type="text"],
+.board_write .info input[type="text"] {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.board_write .title input[type="text"] {
+    width: 80%;
 }
