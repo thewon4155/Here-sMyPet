@@ -24,7 +24,6 @@
     </form>
             </div>
             <div class="bt_wrap">
-                <button type="button" onclick=location.href="/view" class="on">수정</button>
                 <button type="button" onclick=location.href="/view" class="on">취소</button>
             </div>
         </div>
