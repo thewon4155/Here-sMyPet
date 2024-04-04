@@ -20,7 +20,7 @@
         <input type="text" id="title" name="title" value="{{ post.title }}"><br>
         <label for="content">Content:</label><br>
         <textarea id="content" name="content" rows="4" cols="50">{{ post.content }}</textarea><br>
-        <input type="submit" value="Save">
+        <input type="submit" value="수정">
     </form>
             </div>
             <div class="bt_wrap">
