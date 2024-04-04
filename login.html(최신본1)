@@ -25,7 +25,7 @@
           </div>
           <div class="form-area">
             <button type="submit" >로그인</button>
-            <button type="button" onclick=location.href="가입약관.html" class="on">회원가입</button>
+            <button type="button" onclick=location.href="/가입약관" class="on">회원가입</button>
           </div>
         </form>
       </div>
