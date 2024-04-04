@@ -1,0 +1,101 @@
+body {
+    padding-top: 50px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1.2px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#info__id,
+div.info,
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: calc(100% - 110px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* 수정된 스타일 */
+#email-wrapper,
+#birthdate-wrapper {
+    margin-bottom: 10px;
+}
+
+#email-wrapper label,
+#birthdate-wrapper label {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+#email-wrapper input,
+#email-wrapper select,
+#birthdate-wrapper select {
+    width: calc(33% - 5px);
+    display: inline-block;
+}
+
+#email-wrapper input[type="text"] {
+    width: calc(50% - 10px);
+}
+
+#email-wrapper span {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+    margin-right: 1%;
+    vertical-align: middle;
+    margin-top: 7px;
+}
+
+#email-wrapper select {
+    width: calc(38.5% - 5px);
+}
