@@ -25,7 +25,7 @@
                 {% for post in posts %}
                 <div>
                     <div class="num">{{ post.id }}</div>
-                    <div class="title">{{ post.title }}</div>
+                    <div class="title"><a href="{{ url_for('viewpost', id=post.id) }}">{{ post.title }}</a></div>
                     <div class="writer">{{ post.username }}</div>
                     <div class="date">{{ post.created_at.strftime("%Y.%m.%d") }}</div>
                     <div class="count">{{ post.views }}</div>
