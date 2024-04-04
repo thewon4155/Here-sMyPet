@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Here'sMyPet</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>Here'sMyPet</strong>
+            <p>Show off your Pet!</p>
+
+        </div>
+        <div class="board_list_wrap">
+            <div class="board_list">
+                <div class="top">
+                    <div class="num">번호</div>
+                    <div class="title">제목</div>
+                    <div class="writer">ID</div>
+                    <div class="date">작성일</div>
+                    <div class="count">조회</div>
+                </div>
+                {% for post in posts %}
+                <div>
+                    <div class="num">{{ post.id }}</div>
+                    <div class="title">{{ post.title }}</div>
+                    <div class="writer">{{ post.username }}</div>
+                    <div class="date">{{ post.created_at.strftime("%Y.%m.%d") }}</div>
+                    <div class="count">{{ post.views }}</div>
+                </div>
+                {% endfor %}
+
+            </div>
+            <div class="board_page">
+                <a href="#" class="bt first"> &lt;&lt; </a>
+                <a href="#" class="bt prev"> &lt; </a>
+                <a href="#" class="num on">1</a>
+                <a href="#" class="num">2</a>
+                <a href="#" class="num">3</a>
+                <a href="#" class="num">4</a>
+                <a href="#" class="num">5</a>
+                <a href="#" class="bt next"> &gt; </a>
+                <a href="#" class="bt last"> &gt;&gt; </a>
+
+            </div>
+            <div class="bt_wrap">
+                <button type="button" onclick=location.href="/post/apply" class="on">게시</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
