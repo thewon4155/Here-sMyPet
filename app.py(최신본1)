@@ -86,6 +86,11 @@ def get_post():
     posts = Post.query.all()
     return render_template('list.html', posts=posts)
 
+@app.route('/view/<int:id>')
+def viewpost(id):
+    post = Post.query.filter_by(id=id).first()
+    return render_template('view.html', post=post)
+
 @app.route('/post/write', methods=['GET', 'POST'])
 def create():
     if request.method == 'POST':
