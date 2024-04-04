@@ -94,7 +94,7 @@ a {
 }
 
 .board_list .title {
-    text-align: left;
+    text-align: center;
     width: 60%;
 }
 
