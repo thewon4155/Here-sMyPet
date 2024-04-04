@@ -49,8 +49,6 @@ def before_signup():
 def apply():
     return render_template('write.html')
 
-
-
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
