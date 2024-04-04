@@ -91,7 +91,7 @@ def viewpost(id):
     post = Post.query.filter_by(id=id).first()
     return render_template('view.html', post=post)
 
-@app.route('/post/write', methods=['GET', 'POST'])
+@app.route('/post/write', methods=['GET', 'POST'])  
 def create():
     if request.method == 'POST':
         title = request.form['title']
