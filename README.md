@@ -84,6 +84,11 @@ def viewpost(id):
 view.html  
 <div class="title"><a href="{{ url_for('viewpost', id=post.id) }}">{{ post.title }}</a></div>
 
+준표 에러사항 7: 최신 게시물이 위로 안 올라오고 아래에 쌓인다
+문제점: list.html에서 post를 불러올 때 순차적으로 불러오기에 역순 배열이 필요하다.
+해결방안: for post in posts|reverse 
+reverse 파이썬 함수를 통해 배열만 거꾸로 하면, 위로 순차적으로 쌓인다.
+
 권진우 에러 사항 1:
 문제 : 엔드포인트의 라우트 데코레이터가 GET 요청만을 처리하도록 설정되어 있어서 POST 요청을 처리하지 못했어요 그래서 사용자가 로그인 폼을 제출할 때 POST 요청이 발생하면 처리할 수 있는 코드가 없어서 Builderror 발생!! 이를 해결하기 위해 /login 엔드포인트에 대한 라우트 데코레이터를 GET 및 POST 요청을 모두 처리할 수 있도록 수정
 BuildError
